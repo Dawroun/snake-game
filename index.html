@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background-color: #3D087B;
+        }
+        #game-board{
+            background-color: #ccc;
+            width: 100vmin;
+            height: 100vmin;
+            display: grid;
+            grid-template-rows: repeat(21, 1fr);
+            grid-template-columns: repeat(21, 1fr);
+        }
+
+        .snake{
+            background-color: #11698E;
+            border: .25vmin solid black;
+        }
+
+        .food{
+            background-color: #FDB827;
+            border: .25vmin solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-board"></div>
+
+    <script src="/game.js" type="module"></script>
+</body>
+</html>
